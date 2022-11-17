@@ -1,0 +1,22 @@
+<!--
+You can use pattern attribute in input tag to assist in filtering
+Remember! this is client side filtering. You may still need to do
+filtering on server.
+the pattern attribute utilize regex style filtering
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The input pattern attribute</h1>
+
+<form action="#">
+  <label for="country_code">Bank Account)</label>
+  <input type="text" id="bank_acct" name="bank_acct" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+  title="Bank Account in Format of 111-111-1111"><br><br>
+  <input type="submit">
+</form>
+
+</body>
+</html>
